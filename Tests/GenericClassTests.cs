@@ -1,5 +1,6 @@
 using System.Runtime.ExceptionServices;
 using Basics;
+using FluentAssertions;
 
 namespace Tests;
 [TestFixture]
@@ -10,7 +11,10 @@ public class GenericClassTests {
 
         repo.Add("George");
 
-        Assert.That(repo.All().First() == "George");
+        // Assert.That(repo.All().First() == "George");
+        repo.All().FirstOrDefault().Should().NotBeNull();
+        repo.All().FirstOrDefault().Should().Be("George");
+
 
     }
 
