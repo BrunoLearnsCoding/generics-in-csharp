@@ -22,4 +22,10 @@
     <ProjectReference Include="..\Basics\Basics.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Basics\" />
+    <Folder Include="Generic Interfaces\" />
+
+  </ItemGroup>
+
 </Project>
