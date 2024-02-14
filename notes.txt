@@ -1,0 +1,8 @@
+ArrayList is a .net implementation of "list of objects"
+
+---------------------------------------------------
+Generics benefits & advantages
+
+Compile time type safety
+No need to casting
+Helps developers to create their own Types in the real world
