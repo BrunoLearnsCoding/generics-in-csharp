@@ -14,9 +14,5 @@ public class GenericClassTests {
         // Assert.That(repo.All().First() == "George");
         repo.All().FirstOrDefault().Should().NotBeNull();
         repo.All().FirstOrDefault().Should().Be("George");
-
-
     }
-
-
 }
